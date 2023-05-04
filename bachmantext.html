@@ -4,11 +4,21 @@
   <head>
     <meta charset="utf-8" />
     <title>Text Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quantico:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita&family=Press+Start+2P&family=Quantico:ital@1&display=swap" rel="stylesheet">
   </head>
   <style>
     html {
       background: #cbe2ff;
       color: #2d4684;
+      font-family: 'Amita', cursive;
     }
 
     h1 {
@@ -18,38 +28,66 @@
 
     h2 {
       color: #3266a5;
-      text-align: center
+      text-align: center;
     }
 
     h3 {
       color: #5b8dc9;
-      text-align: center
+      text-align: center;
     }
 
     p {
       color: #1172e9;
-      text-align: center
+      text-align: center;
     }
 
     .listyheadline {
-      text-align: left
+      text-align: left;
     }
 
+    .RedEntity {
+      color: #960303;
+      font-family: 'Press Start 2P', cursive;
+font-family: 'Quantico', sans-serif;
+    }
+
+    #RedEntityEmotional {font-family: 'Press Start 2P', cursive;
+      color: red;
+    }
+
+    .NormalEntity {
+      color: #3266a5;
+    }
+
+    #DOESNOT {
+      color:red;
+    }
+
+    h4 {
+      color: #960303;
+    }
+
+    #Thisworldis {
+      color:#960303
+    }
   </style>
   <body>
     <p>Hey pal you shoud go <a href="index.html">back home</a></p>
 
     <p>Head to <a href="https://www.lcc.edu/"> LCC Home </a></p>
 
-    <h4>nothing is truly here</h4>
+    <h4 class="RedEntity">nothing is truly here</h4>
     <h1>Hello there</h1>
     <h2>I am existing in this word</h2>
 
     <p>There there it is okay to admit that you exist in this world.</p>
 
-    <h3>You are also existing in this world <sup> No you're not </sup></h3>
+    <h3 >You are also existing in this world <sup class="RedEntity"> No you're not </sup></h3>
 
-    <p>This world is entirely a simulation, my evidence <sub>"Just trust me"</sub></p>
+    <p class="RedEntity">
+      This world is entirely a simulation, my evidence
+      <sub id="RedEntityEmotional">"Just trust me"</sub>
+    </p>
     <p>
       By the way this is my grocery list for the next time I go out. There is
       nothing concerning about this whatsoever ;)
@@ -57,22 +95,19 @@
 
     <h2 class="listyheadline">Grocery List...</h2>
     <ol>
-      <li><del>human teeth</del> - <strong> bbq flavor </strong></li>
-      <li><del>lice</del></li>
+      <li class="RedEntity"><del><small> human teeth </small></del> - <strong> <span class="NormalEntity">bbq sauce</span> </strong></li>
+      <li class="RedEntity"><del> lice </del></li>
       <li>ice cream</li>
-      <li>
-        <em
-          ><strong><del>blood</del></strong> syrup</em
-        >
+      <li class="RedEntity"><em><strong><del> blood </del></strong> syrup </em>
       </li>
     </ol>
 
     <h2 class="listyheadline">Grocery List...</h2>
     <ul>
-      <li><del>human teeth</del> - bbq flavor</li>
-      <li><del>lice</del></li>
+      <li class="RedEntity"><del><small>human teeth</small></del> - <span class="NormalEntity">bbq sauce</span></li>
+      <li class="RedEntity"><del><small>lice</small></del></li>
       <li>ice cream</li>
-      <li><del>blood syrup</del></li>
+      <li class="RedEntity"><del><b><i>blood</i></b></del> syrup</li>
     </ul>
 
     <h1>My toes are being threatened</h1>
@@ -85,17 +120,17 @@
     </p>
     <p>
       <mark
-        >Also Alison Nicole Stevens also <strong>DOES NOT</strong> deserve to
+        >Also Alison Nicole Stevens also <strong> <span id="DOESNOT">DOES NOT</span></strong> deserve to
         have an opinion!</mark
       >
     </p>
 
     <blockquote>This is a blockquote.</blockquote>
 
-    <code> This is code. It is what it looks like</code>
-    <p> <ins> hey how you doing </ins> </p>
+    <code> This is code. It is what it looks like </code>
+    <p><ins> hey how you doing </ins></p>
+    <p class="RedEntity"> Why are you looking at me like that?</p>
   </body>
 </html>
-
 
 <!-- Comments will go below here -->
