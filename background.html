@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>box demo</title>
+    <title>background</title>
     <style>
       body {
         background-image: url("ZenBG.png");
@@ -11,15 +11,21 @@
 
       #box1 {
         background-image: url("Parrot.jpeg");
-        width: 800px;
+        width: 500px;
         height: 600px;
         margin: 100px;
-}
+        opacity: .3
+      }
 
-      #box2 {   }
-
+      #box2 {width: 500px;
+        height: 500px;
+        background-image: url("Parrot.jpeg");
+        background-size: cover;
+      }
     </style>
   </head>
 
   </body>
+  <div id="box1"><p></p></div>
+  <div id="box2"><p></p></div>
 </html>
